@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("phone-number").addEventListener("input", function (e) {
   this.value = this.value.replace(/[^0-9+]/g, "");
 });
+
+// Products
+module.exports = {
+  // ...
+  plugins: [
+    // ...
+    require("@tailwindcss/aspect-ratio"),
+  ],
+};
