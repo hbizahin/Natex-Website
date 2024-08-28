@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="Natex Thread Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natex Thread & Trims</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- daisyUi added -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body data-theme="light">
+    <div class="bg-white">
+      <header
+        class="absolute inset-x-0 top-0 z-50 bg-gradient-to-r from-orange-300 from-20% via-sky-500 via-33% to-emerald-300 to-90%"
+      >
+        <nav
+          class="flex items-center justify-between px-6 py-3 lg:px-8 lg:py-6"
+          aria-label="Global"
+        >
+          <div class="flex lg:flex-1">
+            <a href="index.html" class="-m-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-24 w-auto" src="Natex Thread Logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              id="mobile-menu-button"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a
+              href="index.html"
+              class="text-sm font-extrabold leading-6 text-gray-900"
+              >Home</a
+            >
+            <a
+              href="company.html"
+              class="text-sm font-extrabold leading-6 text-gray-900"
+              >Company</a
+            >
+            <a
+              href="product.html"
+              class="text-sm font-extrabold leading-6 text-gray-900"
+              >Products</a
+            >
+            <a
+              href="about.html"
+              class="text-sm font-extrabold leading-6 text-gray-900"
+              >About us</a
+            >
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="contact.html"
+              class="text-sm font-extrabold leading-6 text-gray-900"
+              >Contact <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+        </nav>
+
+        <!-- Mobile menu, hidden by default -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <div
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          >
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img
+                  class="h-8 w-auto"
+                  src="Natex Thread Logo.png"
+                  alt="Logo"
+                />
+              </a>
+              <button
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                id="close-mobile-menu-button"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6">
+              <a
+                href="index.html"
+                class="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Home</a
+              >
+              <a
+                href="company.html"
+                class="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Company</a
+              >
+              <a
+                href="product.html"
+                class="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Products</a
+              >
+              <a
+                href="contact.html"
+                class="block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- Products -->
+    <main>
+      <div class="bg-white mt-24">
+        <div
+          class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+        >
+          <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+            Customers also purchased
+          </h2>
+
+          <div
+            class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+          >
+            <div class="group relative">
+              <div
+                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"
+              >
+                <img
+                  src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+              <div class="mt-4 flex justify-between">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Basic Tee
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Black</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+
+            <!-- More products... -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="footer footer-center bg-base-200 text-base-content rounded p-10 bg-gradient-to-r from-orange-300 from-20% via-sky-500 via-33% to-emerald-300 to-90% ..."
+    >
+      <nav class="grid grid-flow-col gap-4">
+        <a href="about.html" class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a
+            href="https://www.facebook.com/share/sxyz3rMF2FtrpC15/?mibextid=qi2Omg"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nabil-nahid-570602106/"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.286c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 11.286h-3v-5.571c0-3.355-4-3.102-4 0v5.571h-3v-10h3v1.529c1.396-2.586 7-2.777 7 2.445v6.026z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <p>
+          Copyright © 2024 - All right reserved by
+          <a
+            href="https://hbizahin.github.io/web-developer-portfolio/"
+            target="_blank"
+          >
+            <span>Hamza Bin Islam</span>
+          </a>
+        </p>
+      </aside>
+    </footer>
+  </body>
+</html>
