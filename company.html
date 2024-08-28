@@ -1,79 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Section</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="Natex Thread Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natex-Contacts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 p-6">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-10">From the blog</h2>
-        <p class="text-center text-gray-600 mb-10">Learn how to grow your business with our expert advice.</p>
-        <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2">
-            <!-- Card 1 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/600x400" alt="Boost your conversion rate" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <div class="flex items-center text-sm text-gray-500 mb-2">
-                        <span>Mar 16, 2020</span>
-                        <span class="mx-2">|</span>
-                        <span class="text-blue-600 font-medium">Marketing</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Boost your conversion rate</h3>
-                    <p class="text-gray-600 mb-4">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo...</p>
-                    <div class="flex items-center">
-                        <img src="https://via.placeholder.com/32" alt="Michael Foster" class="w-8 h-8 rounded-full mr-3">
-                        <div>
-                            <p class="text-gray-900 font-medium">Michael Foster</p>
-                            <p class="text-gray-500 text-sm">Co-Founder / CTO</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/600x400" alt="How to use search engine optimization to drive sales" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <div class="flex items-center text-sm text-gray-500 mb-2">
-                        <span>Mar 10, 2020</span>
-                        <span class="mx-2">|</span>
-                        <span class="text-blue-600 font-medium">Sales</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">How to use search engine optimization to drive sales</h3>
-                    <p class="text-gray-600 mb-4">Optio cum necessitatibus dolor voluptatem provident commodi et. Qui aperiam fuga...</p>
-                    <div class="flex items-center">
-                        <img src="https://via.placeholder.com/32" alt="Lindsay Walton" class="w-8 h-8 rounded-full mr-3">
-                        <div>
-                            <p class="text-gray-900 font-medium">Lindsay Walton</p>
-                            <p class="text-gray-500 text-sm">Front-end Developer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/600x400" alt="Improve your customer experience" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <div class="flex items-center text-sm text-gray-500 mb-2">
-                        <span>Feb 12, 2020</span>
-                        <span class="mx-2">|</span>
-                        <span class="text-blue-600 font-medium">Business</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Improve your customer experience</h3>
-                    <p class="text-gray-600 mb-4">Cupiditate maiores ullam eveniet adipisci in doloribus nulla minus. Voluptas justo...</p>
-                    <div class="flex items-center">
-                        <img src="https://via.placeholder.com/32" alt="Tom Cook" class="w-8 h-8 rounded-full mr-3">
-                        <div>
-                            <p class="text-gray-900 font-medium">Tom Cook</p>
-                            <p class="text-gray-500 text-sm">Director of Product</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </head>
+  <body data-theme="corporate">
+    <header
+      class="absolute inset-x-0 top-0 z-50 bg-gradient-to-r from-orange-300 from-20% via-sky-500 via-33% to-emerald-300 to-90%"
+    >
+      <nav
+        class="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="index.html" class="-m-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-24 w-auto" src="Natex Thread Logo.png" alt="" />
+          </a>
         </div>
-    </div>
-</body>
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            id="mobile-menu-button"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="index.html"
+            class="text-sm font-extrabold leading-6 text-gray-900"
+            >Home</a
+          >
+          <a href="#" class="text-sm font-extrabold leading-6 text-gray-900"
+            >Company</a
+          >
+          <a href="#" class="text-sm font-extrabold leading-6 text-gray-900"
+            >Products</a
+          >
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a
+            href="about.html"
+            class="text-sm font-extrabold leading-6 text-gray-900"
+          >
+            About us<span aria-hidden="true"></span>
+          </a>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div
+        class="lg:hidden hidden"
+        id="mobile-menu"
+        role="dialog"
+        aria-modal="true"
+      >
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="Natex Thread Logo.png" alt="" />
+            </a>
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              id="close-mobile-menu-button"
+            >
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a
+                  href="index.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Products</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Company</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="about.html"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >About us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Card Section Start -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <h3 class="text-xl font-semibold mb-2">Dhaka Office</h3>
+            <hr class="border-blue-600 w-1/4 mx-auto mb-4" />
+            <p>RAOWA Complex (Level-09)</p>
+            <p>VIP Road, Mohakhali</p>
+            <p>Dhaka-1206, Bangladesh</p>
+            <div class="flex justify-center items-center space-x-2 mt-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 10h1M4 10a7 7 0 017-7h0a7 7 0 017 7v0a7 7 0 01-7 7v0a7 7 0 01-7-7zm0 0a3 3 0 003 3h10a3 3 0 003-3m-16 0a3 3 0 003-3h10a3 3 0 003 3m-16 0v-3m16 3v-3"
+                />
+              </svg>
+              <span>+88 02 55058466-72</span>
+            </div>
+            <div class="flex justify-center items-center space-x-2 mt-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 10.5a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7m-4 2.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7m-4 2.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7m-4 2.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0"
+                />
+              </svg>
+              <a
+                href="mailto:info@natex.com.bd"
+                class="text-blue-600 hover:underline"
+                >info@natex.com.bd</a
+              >
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <h3 class="text-xl font-semibold mb-2">Kolkata Office</h3>
+            <hr class="border-blue-600 w-1/4 mx-auto mb-4" />
+            <p>West Bengal-742201,</p>
+            <p>India.</p>
+            <div class="flex justify-center items-center space-x-2 mt-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 10h1M4 10a7 7 0 017-7h0a7 7 0 017 7v0a7 7 0 01-7 7v0a7 7 0 01-7-7zm0 0a3 3 0 003 3h10a3 3 0 003-3m-16 0a3 3 0 003-3h10a3 3 0 003 3m-16 0v-3m16 3v-3"
+                />
+              </svg>
+              <span>+91 33 5555 4444</span>
+            </div>
+            <div class="flex justify-center items-center space-x-2 mt-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 10.5a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7m-4 2.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7m-4 2.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7m-4 2.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7"
+                />
+              </svg>
+              <a
+                href="mailto:kolkata@natex.com.bd"
+                class="text-blue-600 hover:underline"
+                >kolkata@natex.com.bd</a
+              >
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <h3 class="text-xl font-semibold mb-2">London Office</h3>
+            <hr class="border-blue-600 w-1/4 mx-auto mb-4" />
+            <p>221B Baker Street,</p>
+            <p>London NW1 6XE, UK.</p>
+            <div class="flex justify-center items-center space-x-2 mt-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 10h1M4 10a7 7 0 017-7h0a7 7 0 017 7v0a7 7 0 01-7 7v0a7 7 0 01-7-7zm0 0a3 3 0 003 3h10a3 3 0 003-3m-16 0a3 3 0 003-3h10a3 3 0 003 3m-16 0v-3m16 3v-3"
+                />
+              </svg>
+              <span>+44 20 7224 3688</span>
+            </div>
+            <div class="flex justify-center items-center space-x-2 mt-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 10.5a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7m-4 2.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7m-4 2.6a6.6 6.6 0 014 0m4 0a6.6 6.6 0 010 9.1m-4-4.6a6.6 6.6 0 014 0m-4-4.6V7"
+                />
+              </svg>
+              <a
+                href="mailto:london@natex.com.bd"
+                class="text-blue-600 hover:underline"
+                >london@natex.com.bd</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Card Section End -->
+  </body>
 </html>
